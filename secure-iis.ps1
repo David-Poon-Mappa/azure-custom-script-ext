@@ -26,3 +26,4 @@
 
 New-WebBinding -Name "Default Web Site" -Protocol https -Port 443
 Get-ChildItem cert:\localmachine\Certificates | New-Item -Path IIS:\SslBindings\!443
+Set-TimeZone -Id "China Standard Time"
